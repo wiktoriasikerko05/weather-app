@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.app-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px; 
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 400px; 
+  max-width: 100%;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #444;
+}
+
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%; 
+}
+
+input {
+  flex: 1; 
+  width: 100%; 
+  min-width: 0; 
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: #5b548a;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #5b548a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap; 
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #484270;
+}
+/* ------------------------- */
+
+.weather-info {
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.temp-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.temp {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* --- AI ASSISTANT STYLES --- */
+.ai-assistant {
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 15px rgba(119, 106, 236, 0.15);
+}
+
+.ai-assistant h3 {
+  font-size: 0.9rem;
+  color: #5b548a;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ai-assistant p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+}
+/* -------------------------- */
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 0.95rem;
+}
+
+.error-msg {
+  color: #ff4757;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
