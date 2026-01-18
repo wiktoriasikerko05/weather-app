@@ -1,16 +1,35 @@
-# React + Vite
+# AI Weather App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikacja pogodowa, która nie tylko wyświetla temperaturę, ale również analizuje warunki atmosferyczne i generuje inteligentne porady dla użytkownika (AI Assistant).
 
-Currently, two official plugins are available:
+O Projekcie:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Celem projektu było stworzenie narzędzia, które pobiera dane w czasie rzeczywistym z zewnętrznego serwera i przetwarza je na użyteczne informacje. Aplikacja rozwiązuje problem interpretacji surowych danych pogodowych, oferując gotowe sugestie (np. jak się ubrać).
 
-## React Compiler
+Kluczowe funkcjonalności:
+Real-time Data: Pobieranie aktualnej pogody dla dowolnego miasta na świecie (OpenWeatherMap API).
+AI Smart Advice: Autorski algorytm (Rule-based AI), który analizuje temperaturę, opady i wiatr, aby doradzić użytkownikowi odpowiedni ubiór i ostrzec przed trudnymi warunkami.
+Error Handling: Obsługa błędów (np. literówki w nazwie miasta) z komunikatem dla użytkownika.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+Technologie:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Frontend: React.js + Vite
+API: OpenWeatherMap API (REST)
+Język: JavaScript (ES6+), Asynchronous JS (Async/Await)
+Style: CSS3 (Flexbox, CSS Variables, Animations)
+
+Jak uruchomić lokalnie?
+
+1.  Sklonuj repozytorium:
+    ```bash
+    git clone [https://github.com/wiktoriasikerko05/weather-app.git](https://github.com/wiktoriasikerko05/weather-app.git)
+    ```
+2.  Zainstaluj zależności:
+    ```bash
+    npm install
+    ```
+3.  Uruchom projekt:
+    ```bash
+    npm run dev
+    ```
